@@ -10,35 +10,41 @@
     <com.example.kwp.view.ViewPagerIndicator
         android:id="@+id/id_indicator"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:background="#10d6ac"
+        android:layout_height="80dp"
+        android:background="#ea1f22"
         android:orientation="horizontal">
         
-        <TextView
+        <Button
+            android:id="@+id/indicator_1"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center"
             android:text="闹钟"
             android:textSize="18sp"
-            android:textColor="#64ffffff"/>
+            android:background="@drawable/indicator"
+            android:textColor="#CCffffff"/>
 
-        <TextView
+        <Button
+            android:id="@+id/indicator_2"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center"
             android:text="小工具"
             android:textSize="18sp"
+            android:background="@drawable/indicator"
             android:textColor="#64ffffff"/>
 
-        <TextView
+        <Button
+            android:id="@+id/indicator_3"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center"
             android:text="设置"
             android:textSize="18sp"
+            android:background="@drawable/indicator"
             android:textColor="#64ffffff"/>
     </com.example.kwp.view.ViewPagerIndicator>
 
@@ -50,4 +56,6 @@
         android:background="#ffffff">
 
     </android.support.v4.view.ViewPager>
+
+
 </LinearLayout>

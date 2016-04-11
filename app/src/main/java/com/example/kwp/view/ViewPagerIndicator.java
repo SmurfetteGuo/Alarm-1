@@ -6,8 +6,13 @@ import android.graphics.Color;
 import android.graphics.CornerPathEffect;
 import android.graphics.Paint;
 import android.graphics.Path;
+import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
+import android.util.Log;
+import android.view.View;
 import android.widget.LinearLayout;
+
+import com.example.kwp.alarm.R;
 
 /**
  * Created by kwp on 2016/4/7.
@@ -76,4 +81,10 @@ public class ViewPagerIndicator extends LinearLayout {
 
         invalidate();
     }
+
+    @Override
+    protected void onFinishInflate() {
+        super.onFinishInflate();
+    }
+
 }
