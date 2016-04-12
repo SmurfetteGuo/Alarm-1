@@ -23,7 +23,9 @@
             android:text="闹钟"
             android:textSize="18sp"
             android:background="@drawable/indicator"
-            android:textColor="#CCffffff"/>
+            android:textColor="#CCffffff"
+            android:textStyle="bold"
+            />
 
         <Button
             android:id="@+id/indicator_2"

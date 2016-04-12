@@ -76,6 +76,7 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
         indicator2.setOnClickListener(this);
         indicator3.setOnClickListener(this);
 
+
     }
 
 
@@ -146,5 +147,27 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
                 break;
 
         }
+    }
+
+//点击back键后弹出toast来提示再按一次
+    boolean press_flag = true;
+    @Override
+    public void onBackPressed() {
+        long first_time=0,second_time=0;
+        first_time = System.currentTimeMillis();
+        if(press_flag){
+            Toast.makeText(MainActivity.this,"再次点击以退出",Toast.LENGTH_SHORT).show();
+            press_flag = false;
+        }
+        else{
+            second_time = System.currentTimeMillis();
+            if(second_time-first_time<=3000){
+                super.onBackPressed();
+            }
+            else {
+                press_flag = true;
+            }
+        }
+
     }
 }
